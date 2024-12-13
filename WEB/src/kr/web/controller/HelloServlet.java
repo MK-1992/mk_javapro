@@ -2,10 +2,10 @@ package kr.web.controller;
 
 import java.io.*;
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-
 import kr.web.util.MyUtil;
-
+@WebServlet("/hs.do") // <- web.xml에서 매핑을 안하고 어노테이션으로 매핑할 수 있음
 // JavaEE -> Servlet의 골격
 
 public class HelloServlet extends HttpServlet {
